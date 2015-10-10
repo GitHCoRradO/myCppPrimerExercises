@@ -6,7 +6,7 @@ int main()
 	if(std::cin>>sum)
 	{
 		Sales_item item;  //here,when I put item outside if together
-                                  //with sum,the running result always goes                                        // wrong. why?
+                                  //with sum,the running result always goes wrong. why?
 		while(std::cin>>item)
 		{
 			if(sum.isbn()==item.isbn())sum+=item;
