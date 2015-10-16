@@ -1,0 +1,2 @@
+global_str and local_str are both initialized as empty string.
+global_int is initialized with 0,whereas local_int is uninitialized.
