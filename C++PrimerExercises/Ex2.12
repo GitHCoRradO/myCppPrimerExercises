@@ -1,0 +1,4 @@
+(a) invalid .because double is a keyword and it cannot be used as an identifier.
+(b) if this variable is defined outside a function,it may be invalid.
+(c) invalid.identifiers cannot be composed of '-'.
+(e) even though valid,variable names normally are lowercase.
