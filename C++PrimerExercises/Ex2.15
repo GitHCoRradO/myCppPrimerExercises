@@ -1,0 +1,4 @@
+(a)valid.ival is initialized as 1,for 1.01 is truncated when ival is initialized.
+(b)invalid.initializer must be an object.
+(c)valid.
+(d)invalid.a reference must be initialized.
