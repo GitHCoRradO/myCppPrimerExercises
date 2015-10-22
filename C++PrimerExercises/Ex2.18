@@ -1,0 +1,9 @@
+//code to change the value of a pointer:
+//int i = 10, *p1 = &i;
+//int n = 20;
+//p1 = &n;
+//p1 = 0;
+//
+//code to change the value to which the pointer points:
+//int i = 10, *p1 = &i;
+//*p1 = 20;

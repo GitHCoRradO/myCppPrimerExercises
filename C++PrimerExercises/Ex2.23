@@ -1,0 +1,2 @@
+//what is a "valid" object?what is an object?
+//if I know the answers to these questions,I may use the derefenrence operator on the pointer and print the value of the object the pointer points to.even so,I do not know how to determine whether an object is valid by the printed value.

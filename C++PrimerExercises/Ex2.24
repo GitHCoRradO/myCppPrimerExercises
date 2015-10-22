@@ -1,0 +1,1 @@
+//p is a void* pointer.it can hold the address of any object.lp is defined as a pointer to long.and the statement initializes lp to point to an int object i.this is invalid.as is mentioned in the book,the types of the pointer and the object to which it points must match.

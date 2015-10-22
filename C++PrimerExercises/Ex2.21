@@ -1,0 +1,1 @@
+//only (b) is invalid.because assigning an int(i) to a pointer(ip) is invalid.

@@ -1,0 +1,2 @@
+//if (p)	//p is a pointer to an int.it is a nonzero pointer.any nonzero pointer evaluates as ture in a condition.
+//if (*p)	//the dereference operator yields the int p points to.*p is equal to i.if i has nonzero value,the condition evaluates as true;if i has value '0',the condition evaluates as false.
