@@ -1,0 +1,3 @@
+(a)ip is a pointer.i is an int.r is a reference bound to i.
+(b)i is an int.ip is a null pointer.
+(c)ip is a pointer.ip2 is an int.
