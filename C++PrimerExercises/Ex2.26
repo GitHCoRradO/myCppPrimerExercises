@@ -1,0 +1,5 @@
+(a)illegal.we must initialize a const object.
+(b)legal.cnt is an int object.
+(c)legal.sz is a const object initialized with the value of cnt.
+(d)"++cnt;" is legal.it performs as this statement: cnt = cnt + 1;
+   "++sz;" is illegal.this statement tries to copy the value of the expression 'sz + 1' into sz.it will change the value of sz.such operation cannot be performed by const objects.
