@@ -1,0 +1,8 @@
+only (f) is illegal. the '&' symbol denotes what is followed is a reference name.but it is followed by a keyword const.this is not defined by the 
+language.
+(a)i is an int.r is a reference to const(which is 0).
+(b)p2 is a const pointer to an int object.it holds the address of i2.
+(c)i is a const int.it is initialized as 0.r is a reference to const.
+(d)p3 is a const pointer to a const int.it holds the address of i2.
+(e)p1 is a pointer to a const int.it holds the address of i2.
+(g)i2 is a const int.it is initialized with the value of i.r is a reference to const.it refers to the value of i.

@@ -1,0 +1,7 @@
+assuming that all the variables in the previous exercise are initialized.
+(a)legal.the value of ic is copied into i
+(b)legal.p1 now holds the same address as p3 does.
+(c)legal.p1 now points to ic.
+(d)illegal.the statement tries to change the address p3 holds to that of ic.but p3 is a const pointer.the address it holds cannot be changed.
+(e)illegal.p2 is a const pointer.we cannot change the address it holds.
+(f)ic is a const int.its value cannot be changed.

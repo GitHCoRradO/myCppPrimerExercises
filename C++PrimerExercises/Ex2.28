@@ -1,0 +1,5 @@
+(a)illegal.cp is a const pointer.it must be initialized. 
+(b)illegal.p2 is a const pointer.it must be initialized. 
+(c)illegal.ic is a const int.it is not initialized.
+(d)illegal.p3 is a const pointer.it must be initialized. 
+(e)legal.p is a pointer to a const int.
