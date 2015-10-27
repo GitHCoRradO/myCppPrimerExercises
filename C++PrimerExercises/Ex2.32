@@ -1,0 +1,4 @@
+illegal.
+int null = 0, *p = &null;
+or
+int null = 0, *p = nullptr;
