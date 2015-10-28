@@ -1,0 +1,11 @@
+a = 42; //a is an int.its value is changed from 0 to 42.correct.
+b = 42; //the same thing happens to b as to a.correct.
+c = 42; //the same thing happens to c as to a.correct.
+d = 42; //error.d is a pointer to int.we cannot assign a nonzero literal to a pointer.(I am not very sure about this.) compiler info:
+	//error:invalid conversion from 'int' to 'int*'
+	//why is the 42 here of type int according to the compiler?isn't it a literal?
+e = 42; //error.e is a pointer to const int.we cannot assign a nonzero literal to a pointer.(I am not very sure about this.) compiler info:
+	//error:invalid conversion from 'int' to 'const int*'
+g = 42; //error.g is a reference to const int ci.the statement tries to assign 42 to ci.it's a const int.its value cannot be changed.compiler info:
+	//error: assignment of read-only reference 'g'
+
