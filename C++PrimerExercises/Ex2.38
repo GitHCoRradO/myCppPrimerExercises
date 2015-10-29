@@ -1,0 +1,8 @@
+Examples:
+int i = 0, *p = &i;
+auto a = *p;
+decltype(*p) b = i;    //a is an int.b is a reference to int i.
+
+int n = 0;
+auto c = n;
+decltype(n) d;  	//c and d are both int.

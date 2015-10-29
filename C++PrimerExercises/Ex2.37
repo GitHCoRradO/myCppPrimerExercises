@@ -1,0 +1,4 @@
+a is an int. a = 3.
+b is an int. b = 4.
+c is an int. c = 3.
+d is a reference to int a.

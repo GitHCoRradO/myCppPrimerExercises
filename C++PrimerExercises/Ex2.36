@@ -1,0 +1,9 @@
+a is an int.
+b is an int.
+c is an int.
+d is a reference to a.
+when the code finishes,the value of each variables are:
+a = 4
+b = 4
+c = 4
+d = 4
