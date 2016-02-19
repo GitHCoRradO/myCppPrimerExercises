@@ -1,0 +1,3 @@
+legal.
+c is a reference to const char.
+Edited:If the code in the loop body does try to change the value of c,it is illegal.
