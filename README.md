@@ -1,1 +1,1 @@
-# myCppPrimerExercises
+# MyCppPrimerExercises

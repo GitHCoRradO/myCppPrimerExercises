@@ -1,0 +1,3 @@
+vector<vector<int>> ivec;  // legal.ivec is a vector of vectors of ints.
+vector<string> svec = ivec;	// illegal.svec holds strings,not vectors of ints.
+vector<string> svec(10, "null");	//	svec holds 10 elements,which are all string "null".

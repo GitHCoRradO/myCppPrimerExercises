@@ -1,0 +1,7 @@
+(a)v1 is empty.
+(b)v2 holds 10 elements,which are all int 0.
+(c)v3 holds 10 elements,which are all int 42.
+(d)v4 has 1 element with value 10.
+(e)v5 has 2 elements with value 10 and 42.
+(f)v6 has 10 elements of empty string.
+(g)v7 has 10 elements of type string with value "hi".
