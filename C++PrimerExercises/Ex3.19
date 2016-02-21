@@ -1,0 +1,10 @@
+Way 1:
+vector<int> ivec(10,42);
+Way 2:
+vector<int> ivec{42,42,42,42,42,42,42,42,42,42};
+Way 3:
+vector<int> ivec;
+for (int i = 0; i < 10; ++i)
+	ivec.push_back(42);
+
+My preferred way of initializing such kind of vector:way 1.Such kind of vector has elements of the same value,thus making it very easy and swift to use way 1 to create such a vector.
