@@ -15,12 +15,13 @@ int main() {
 	if (ivec.size() > 0) {
 		cout << "The sum of each pair of adjacent elements are:" << endl;
 		if (ivec.size() % 2 == 1) {
-			for (auto beg = ivec.begin(),end = ivec.end() - 1; beg != end; beg += 2) {
+			auto beg = ivec.begin(), end = ivec.end() - 1;
+			for (; beg != end; beg += 2) {
 				int sum = 0;
 				sum = *beg + *(beg + 1);
 				cout << sum << " ";
-			cout << *beg << endl;
 			}
+			cout << *beg << endl;
 		}
 		else {
 		for (auto beg = ivec.begin(),end = ivec.end(); beg != end; beg += 2) {
@@ -40,7 +41,8 @@ int main() {
 		cout << endl;
 	}
 	else {
-	for (auto beg = ivec.begin(), end = ivec.end() - 1; beg != end; ++beg, --end) {
+	auto beg = ivec.begin(), end = ivec.end() - 1;
+	for (; beg != end; ++beg, --end) {
 		int sum = 0;
 		sum = *beg + *end;
 		cout << sum << " ";

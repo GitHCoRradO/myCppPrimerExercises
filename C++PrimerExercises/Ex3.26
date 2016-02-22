@@ -1,0 +1,4 @@
+mid = beg + (end - beg) / 2;
+instead of:
+mid = (beg + end) / 2;
+beg and end are both iterators.Operations supported by vector and string iterators include no such operation to add one iterator to another iterator,whereas we can subtract an iterator from another iterator to yield an integer.
