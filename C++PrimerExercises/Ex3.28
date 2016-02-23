@@ -1,0 +1,7 @@
+string sa[10];			//sa is an array of 10 empty strings.
+int ia[10];			//ia is an array of 10 int 0.
+int main() {
+	string sa2[10];		//sa2 is an array of 10 empty strings.
+	int    ia2[10];		//ia2 is an array of 10 ints.the values are not defined.
+}
+

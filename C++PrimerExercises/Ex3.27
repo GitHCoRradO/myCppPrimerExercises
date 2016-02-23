@@ -1,0 +1,5 @@
+unsigned buf_size = 1024;
+(a)int ia[buf_size];		//illegal.buf_size is not const expression.
+(b)int ia[4 * 7 - 14];		//legal.4 * 7 - 14 is a const expression.
+(c)int ia[txt_size()];		//legal.txt_size() returns an int,which is not a const expression.
+(d)char st[11] = "fundamental";		//illegal.literal string "fundamental" has 12 chars.

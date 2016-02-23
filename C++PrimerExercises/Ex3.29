@@ -1,0 +1,2 @@
+Some Drawbacks of using arrays instead of vectors:
+1.sometimes we do not know for sure how many elements we would be using.Creating arrays of fixed size makes it very inconvenient to use the elements at run-time.
