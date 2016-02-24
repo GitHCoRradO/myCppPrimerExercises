@@ -1,0 +1,2 @@
+unsigned scores[11] = {};	//{} gives 0 initializer.yet scores is initialized.the remaining elements will be value initialized.
+unsigned scores[11];		//not initialized.elements are undefined.

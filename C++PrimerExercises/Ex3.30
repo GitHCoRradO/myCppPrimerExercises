@@ -1,0 +1,4 @@
+constexpr size_t array_size = 10;
+int ia[array_size];
+for (size_t ix = 1;ix <= array_size; ++ix)
+	ia[ix] = ix;				//the indices of ia is 0 through 9;the condition of for statement allows ix to be equal to array_size,which is 10,thus invalidating ia[10] = 10.
