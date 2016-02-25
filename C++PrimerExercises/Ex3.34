@@ -1,0 +1,2 @@
+p1 += p2 -p1;		//this statement equals p1 = p1 + p2 - p1;and that means p1 = p2;it assigns p2 to p1;it is legal.as long
+			//as p1 and p2 are both pointers to elements in the same array,this original statement would be legal.
