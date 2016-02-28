@@ -1,0 +1,3 @@
+Above all,if there are elements in v,the while loop will not print the first element in v.
+if there is at least one negative element in v,and the first negative element is not the first element of v,the while loop will print from the second to the first negative element.if the first element is the first negative element,the while loop prints nothing.
+if there are no negative elements in v,with the while loop iterates again and again,pbeg will finally move to the position at the last element.then the loop body will increment pbeg,which will become off-the-end iterator,and then tries to dereference the off-the-end iterator,which is disastrous.

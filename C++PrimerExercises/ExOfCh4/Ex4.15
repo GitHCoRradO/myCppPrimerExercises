@@ -1,0 +1,9 @@
+double dval;	int ival;	int *pi;
+dval = ival = pi = 0;
+/*
+= operator associates from right to left.pi = 0 assigns 0 to pi,making pi a null pointer.then ival = pi is in error,for we cannot assign a pointer to int.
+It can be corrected as follows:
+pi = 0;
+dval = ival = 0;
+*/
+

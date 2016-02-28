@@ -1,0 +1,15 @@
+(a) ptr != 0 && *ptr++
+according to the precedence table,this expression is grouped as follows:
+((ptr != 0) && (*(ptr++)))
+remember the left hand operand is always evaluated first.
+this compound expression checks whether ptr is null pointer.then it checks whether the int pointed to is 0.ptr finally is added by 1.(this is weird)
+(b) ival++ && ival
+check whether ival equals 0.then add 1 to ival.then check the incremented ival is 1.apparently,the finally bool type returned by this expression is false.
+(c) vec[ival++] <= vec[ival]
+the evaluation order of the two operands of <= is undefined.
+if right operand evaluated first,it equals:
+vec[ival] <= vec[ival]	//
+ival++;			//just illustrating.
+if left operand evaluated irst,it equals:
+vec[ival] <= vec[ival + 1]
+ival++;

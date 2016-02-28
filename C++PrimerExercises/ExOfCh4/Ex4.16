@@ -1,0 +1,6 @@
+(a) if (p = getPtr() != 0)
+corrected form:
+if((p = getPtr()) != 0)
+(b) if (i = 1024)
+corrected form:
+if (i == 1024)
