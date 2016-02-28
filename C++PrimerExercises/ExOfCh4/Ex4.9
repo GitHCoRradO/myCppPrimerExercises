@@ -1,0 +1,8 @@
+const char *cp = "Hello World";
+if (cp && *cp)
+/*	character string literal "Hello World" is a C-style charater string.As is mention in the book in page 122,this character string literal 
+is stored in a character array and is null terminated.
+cp points to the first character in "Hello World".cp is not a null pointer.Converted into bool type,cp equals true.
+then the right side of && is evaluated.and dereference operator * has higher precedence than &&.
+*cp is grouped before &&.*cp yields the underlying character 'H',which is not '\0'.when converted to bool type,'H' equals true.
+so the condition cp && *cp equals true.

@@ -1,0 +1,6 @@
+i != j < k
+< operator has higher precedence than != operator.
+subexpression j < k is grouped first. j < k yields a bool type value.I will name the value n.
+then i != n is evaluated.
+bool type value n will be converted to int.if n is true,n will be converted to 1 as an int.otherwise,n will be converted to 0 as an int.
+so i != n tests whether int i equals 1 or 0.

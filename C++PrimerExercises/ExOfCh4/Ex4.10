@@ -1,0 +1,4 @@
+int n = 0;
+cin >> n;
+while (n != 42)			//while(cin >> n && n != 42)
+	cin >> n;
