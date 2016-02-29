@@ -1,0 +1,26 @@
+(a)*iter++
+legal.
+if iter is not off-the-end iterator,this expression is legal.it moves iter to the next element.and it returns the string at the previous,unchanged position.
+(b)(*iter)++
+illegal.
+(*iter) yields the underlying string.and the ++ operator tries to add 1 to that string,which is illegal.
+(c)*iter.empty()
+illegal.
+. operator has higher precedence than * operator.so it groups as follows:
+*(iter.empty())
+there is no member function empty() of iter.
+(d)iter->empty()
+it equals: (*iter).empty()
+*iter yields the underlying string.
+and . operator checks whether the string is empty,returning a bool type value.
+(e)++*iter
+illegal.
+++ and * have the same precedence.they associate from right to left.so the expression equals:
+++(*iter)
+*iter yields the underlying string.++ operator tries to add 1 to the string,which is illegal.
+(f)iter++->empty()
+legal.
+it equals:
+(iter++)->empty()
+iter++ moves iter to the next position,returning a copy of the unchanged iterator.then -> dereference the copy of the unchanged iterator,and fetches its
+member function empty() to check if the underlying string is empty.
