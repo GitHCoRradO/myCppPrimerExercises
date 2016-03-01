@@ -1,0 +1,8 @@
+finalgrade = (grade > 90) ? "high pass" : (grade < 60) ? "fail" : "pass";
+Right associative means this assignment groups as follows:
+finalgrade = (grade > 90) ? "high pass" : ((grade < 60) ? "fail" : "pass");
+if conditional operator associates from left to right.the assignment would group as follows:
+finalgrade = ((grade > 90) ? "high pass" : (grade < 60)) ? "fail" : "pass";
+this means the return of ((grade > 90) ? "high pass" : (grade < 60)) would become the condition of ? "fail" : "pass"
+the return would be either "high pass",which is a string literal,which cannot perform as a condition,or (grade < 60),which would perform okay as a condition.
+so the conditional operator cannot associate from left to right.	//here is a problem.what would literal string converted to bool type be?
