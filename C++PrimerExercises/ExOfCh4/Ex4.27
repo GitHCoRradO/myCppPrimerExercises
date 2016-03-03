@@ -1,0 +1,17 @@
+unsigned long ul1 = 3, ul2 = 7;
+assuming ul1 and ul2 are stored in 4 Bytes(i.e. 32 bits),here is the binary representation of ul1 and ul2:
+ul1	00000000 00000000 00000000 00000011
+ul2	00000000 00000000 00000000 00000111
+(a) ul1 & ul2
+result:
+00000000 00000000 00000000 00000011
+represented by unsigned long this number would be 2
+(b) ul1 | ul2
+00000000 00000000 00000000 00000111
+represented by unsigned long this number would be 3
+(c) ul1 && ul2
+ul1 and ul2 are both nonzero value,when converted into bool type would yield true.
+the result of true && true would be true
+(d) ul1 || ul2
+true || true yields true
+

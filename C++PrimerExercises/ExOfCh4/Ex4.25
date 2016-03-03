@@ -1,0 +1,7 @@
+00000000 00000000 00000000 01110001
+operated by bitwise NOT operator
+11111111 11111111 11111111 10001110
+<< 6
+11111111 11111111 11100011 10000000		//I do not know for sure how many bits would be used to form the promoted form of 'q'.here I assume the 1-byte 'q' would be
+						//promoted to 4-byte int.
+						//another answer is -7296,which converted to binary is -11100 10000000

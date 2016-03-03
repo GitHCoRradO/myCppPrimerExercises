@@ -1,0 +1,3 @@
+on a machine with 16-bit int.
+1UL << 27 would yield all 0 16-bit int.
+because shifting the bits in an int left or right more than 16 bits would absolutely result in the original bits moved out of range,which would result in accuracy loss.
