@@ -1,0 +1,11 @@
+someValue ? ((++x), (++y)) : ((--x), (--y))
+if someValue,when converted to bool type,is true,add 1 to x,and add 1 to y.
+otherwise,decrease 1 from x,and decrease 1 from y.
+EDIT 1:
+previous grouping was wrong.
+, has lowest precedence.so the grouping should be:
+(someValue ? (++x, ++y) : --x), --y
+if someValue is ture,++x and ++y.then --y.the whole expression returns  the unchanged y.(which was the right hand operand of the comma operator.)
+if someValue is false,--x.then --y.
+this expression equals:
+someValue ? (++x, y) : (--x,--y)

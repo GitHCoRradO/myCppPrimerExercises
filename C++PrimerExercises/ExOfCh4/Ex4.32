@@ -1,0 +1,8 @@
+constexpr int size = 5;
+int ia[size] = {1, 2, 3, 4, 5};
+for (int *ptr = ia, ix = 0;ix != size && ptr != ia + size; ++ix, ++ptr) { /*...*/ }
+/*
+*	ptr initialized to point to the first element in array ia.and ix initialized with 0.once ix inequals 5 and ptr does not point to one past the element in 
+*	array ia,both of which should be true,then the loop body is executed.after that,1 is added to ix.and ptr moves to the next element in array ia.
+*
+*/
