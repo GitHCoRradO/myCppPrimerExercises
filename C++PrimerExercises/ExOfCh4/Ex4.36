@@ -1,0 +1,6 @@
+int i;
+double d;
+i *= d;
+
+rewrite i *= d,so that it does integral,ranther than floating-point,multiplication.
+i *= static_cast<int>(d);

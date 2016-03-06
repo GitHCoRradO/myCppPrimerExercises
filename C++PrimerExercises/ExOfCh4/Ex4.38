@@ -1,0 +1,3 @@
+double slope = static_cast<double>(j/i);
+
+i and j are both int.the division returns an int.then the returned int is explicitly converted to double to initialize slope.
