@@ -1,0 +1,13 @@
+(a) while (string::iterator iter != s.end()) {/*....*/}
+the loop condition is in error.
+iter is defined in the condition,and it is not initialized.at the same time of iter being created,the iter != s.end() expression tries to compare s.end() with the
+undefined object iter.the result is undefined.
+(b)while (bool status = find(word)) {/*...*/}
+   if (!status) {/*...*/}
+in the condition of the while statement,status is defined and initialized with the return of find(word).
+if expression find(word) returns true,which means word is found by function find,then status is initialized with bool value true.the while loop body in this 
+condition will be executed.then the if statement test whether status is false,in this case(status being true), !status yields false,the if body will not executed.
+if expression find(word) returns false,meaning word is not found be function find,the while body will not be execute.next,the condition of if statment-- !status--
+yields true,its body will be executed. 
+Edit 1:
+I posted a question @StackOverflow:http://stackoverflow.com/questions/35846080/what-does-variable-definition-do-in-control-structure-in-c
