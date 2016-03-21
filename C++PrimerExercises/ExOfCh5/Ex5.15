@@ -1,0 +1,24 @@
+(a)
+for (int ix = 0; ix != sz; ++ix) { /*...*/}
+if (ix != sz)
+	//....
+Error:
+the variable ix in the condition of if is out of scope,for ix defined in the for header is destroyed after the for loop terminates.
+Corrected into:
+int ix = 0;
+for (; ix != sz; ++ix) {/*...*/}
+if (ix != sz)
+	//....
+
+(b)
+int ix;
+for (ix != sz; ++ix) {/*...*/}
+error:
+init-statement missing.
+Corrected into:
+for (int ix = 0; ix != sz; ++ix) {/*...*/}
+
+(c)
+for (int ix = 0; ix != sz; ++ix, ++sz) {/*...*/}
+
+in terms of grammar,the fragment of code is correct.

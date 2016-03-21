@@ -1,0 +1,10 @@
+for (init-statement condition; expression) {/*...*/}
+----------------------------------------------------
+init-statement
+while (condition) {/*...*/}
+
+
+I think the for loop and the while loop are interchangeable.
+And there maybe one flaw using while loop:the variables defined in init-statement is visible for the whole environment;and if they are not frequently used lat-
+er,the memory cost they cause could be a problem.
+variables in the init-statment in the for loop will be out of scope elsewhere out of the for loop itself.(they are destroyed after the loop execution.)
