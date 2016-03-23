@@ -1,0 +1,44 @@
+(a)
+int f() {
+	string s;
+	//...
+	return s;
+}
+
+error:
+s is a string.the return statement in the body of function f tries to return s,while the return type in the defintion of f is int.there is no conversion
+from string to int.
+Corrected into:
+string f() {
+	string s;
+	//...
+	return s;
+}
+
+(b)
+f2(int i) {/*...*/}
+
+error:
+return type missing.
+Corrected into:
+void f2(int i) {/*...*/}
+
+(c)
+int calc(int v1, int v1) {/*...*/ }
+
+error:
+No two parameters can have the same name.
+
+Corrected into:
+int calc(int v1, int v2) {/*......*/}
+
+(d)
+double square(double x) return x*x;
+
+error:
+the body of a function should be enclosed in a pair of curly braces.
+
+Corrected into:
+double square(double x) {
+	return x*x;
+}
