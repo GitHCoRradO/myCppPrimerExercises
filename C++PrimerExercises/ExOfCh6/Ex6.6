@@ -1,0 +1,12 @@
+Parameters are local variables defined in the parentheses following the function name.Variables defined in the function body are also local variables.
+local static variables are local variables in function bodies with static specifier.Each local static variable is intialized before the first time execution passes through
+the objects' definition.Unlike local objects,local static objects are not destroyed when a function ends.They are destroyed when the program terminates.
+
+Example:
+
+void fck_1(int v1) {
+	int i = 0;
+	static int j = 0;
+	//......
+	return;
+}
