@@ -1,0 +1,4 @@
+void f(T)	and	void f(T&)
+in the first version of f,argument is passed by value.the value of the argument is copied into the parameter.nothing the function does to the parameter can affect the argument.
+in the second version,argument is passed by reference.everything the function does to the parameter affects its corresponding argument,for the parameter is just a reference to
+its corresponding argument.

@@ -1,0 +1,14 @@
+example as to parameters should be a reference type:
+void f(int &i) {
+	i = 0;
+	return;
+}
+
+example as to parameters should not be a reference type:
+void f(vector<int>::iterator begin, vector<int>::iterator end) {
+	for(vector<int>::iterator iter = beg; iter != end; ++iter)
+		cout << *iter << endl;
+	return;
+}	//in this case,if f has two reference parameters,then they are iteraror&.when we pass beg and end to the parameters,beg and end usually are const iterator.we 
+can not bind a plain reference to the const iterator.
+	//I am not very sure of this.

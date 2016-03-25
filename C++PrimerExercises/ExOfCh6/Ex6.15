@@ -1,0 +1,5 @@
+ocurrs should be a plain reference instead of a reference to const.if ocurrs is a reference to const,then it can not be used to change the value of the variable it is bound to.
+s had better be a reference to const instead of a plain reference.we can not pass a const object,or a literal,or an object that requires conversion to a plain reference param-
+eter.using a reference instead of a reference to const unduly limits the type of arguments that can be used with the function.
+c may not be a reference.if parameter c is defined like this: char &c,then we can not pass charater literal argument to parameter c,for this would be equivalent to binding a 
+reference to charater literal,which is illegal.

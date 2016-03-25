@@ -1,0 +1,1 @@
+bool is_empty(const string &s) { return s.empty(); }
