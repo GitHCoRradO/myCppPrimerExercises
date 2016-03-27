@@ -1,0 +1,6 @@
+(a)
+bool compare(matrix &, matrix &);
+
+(b)
+vector<int>::iterator change_val(int, vector<int>::iterator);
+
