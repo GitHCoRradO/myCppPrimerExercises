@@ -1,0 +1,7 @@
+void swap(int *&v1, int *&v2) {
+	int *p = 0;
+	p = v1;
+	v1 = v2;
+	v2 = p;
+	return;
+}
