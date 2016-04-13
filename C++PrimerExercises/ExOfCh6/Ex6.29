@@ -1,0 +1,2 @@
+I will never use a reference as the loop control variable.I shall always use reference to const.
+elements in an initializer_list object are const.It is invalid to bind plain reference to const objects.
