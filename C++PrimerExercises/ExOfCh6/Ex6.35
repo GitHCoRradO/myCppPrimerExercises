@@ -1,0 +1,5 @@
+passing val-- rather than val - 1 works totally differently.
+passing val-- will always pass the unchanged original val to the next call of factorial,which would result in recursion loop.
+//	I got 1 problem here. 
+//	in what order are the two operands of factorial(val--) * val evaluated?
+//	This is another example of the undefined behavior that two subexpressions use the same variable,while the variable is changed in either of the subexpression.

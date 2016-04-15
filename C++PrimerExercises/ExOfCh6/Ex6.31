@@ -1,0 +1,1 @@
+Returning a reference to a local object is always invalid.It is valid to return a reference to a preexisting object.And since reference returns are lvalues,we may assign to the result of a function returning a plain reference(not reference to const).

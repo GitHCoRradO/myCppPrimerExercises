@@ -1,0 +1,10 @@
+int &get(int *arry, int index) { return arry[index];};
+int main() {
+	int ia[10];
+	for (int i = 0; i != 10; ++i)
+		get(ia, i) = i;
+}
+/* 	legal.
+	get(int*, int) takes a pointer and an int.it returns a reference to the int at the index position in the array.
+	the main function begins by creating an array of 10 ints,values of which are default initialized.
+	in the for loop,the statement assigns i to ia[i] on each iteration.
