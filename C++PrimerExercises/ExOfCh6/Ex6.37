@@ -1,0 +1,9 @@
+string (&func())[10];
+
+typedef string arrT[10];
+arrT &func();
+
+auto func() -> string(&)[10];
+
+string arrT[10] = {};		//string arrT[10];
+decltype(arrT) &func();

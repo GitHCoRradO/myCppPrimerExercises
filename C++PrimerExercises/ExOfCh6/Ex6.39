@@ -1,0 +1,20 @@
+(a)
+int calc(int, int);
+int calc(const int, const int);
+
+the second calc takes two paramters both of type const int and returns int.
+it is illegal,for top-level consts are ignored.these two functions have the same parameter list.
+
+(b)
+int get();
+double get();
+
+the second get takes an empty list of paramters and returns double.
+it is illegal,for only the return type differs.
+
+(c)
+int *reset(int *);
+double *reset(double *);
+
+//even with different return types,this is still overloading.
+the second reset takes a pointer to double and returns a pointer to double.legal.
