@@ -1,0 +1,4 @@
+(a)
+inline function.it is normally defined and declared in headers.
+(b)
+normal function.it is normally defined in source files and declared in headers.

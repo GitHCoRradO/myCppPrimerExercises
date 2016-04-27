@@ -1,0 +1,10 @@
+(a)
+int ff(int a, int b = 0, int c = 0);
+
+legal.
+
+(b)
+char *init(int ht = 24, int wd, char bckgrnd);
+
+error.
+Deffaults can be specified only if all parameters to the right already have defaults.

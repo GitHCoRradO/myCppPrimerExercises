@@ -1,0 +1,16 @@
+char *init(int ht, int wd = 80, char bckgrnd = ' ');
+
+(a)
+init();
+illegal,for this call provides no arguments,and the first parameter ht has no default argument.
+
+(b)
+init(24,10);
+legal.
+this call passes 24 to parameter ht and 10 to parameter wd,and parameter bckgrnd is initialized with its default argument.
+
+(c)
+init(14,'*');
+legal,but unlikely to match the programmer's intent.
+the programmer might want to pass 14 to ht and let wd be initialized with its default argument,and pass '*' to bckgrnd;
+however,this call passes 14 to ht and converts chararter '*' to int type to initialize wd,bckgrnd default initialized with ' '.
