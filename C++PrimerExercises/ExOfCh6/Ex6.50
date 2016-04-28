@@ -1,0 +1,20 @@
+(a) f(2.56, 42)
+viable functions:
+f(int, int)
+f(double, doule)
+ambiguous.
+
+(b) f(42)
+viable functions:
+f(int)		best match
+f(double, double)
+
+(c) f(42, 0)
+viable functions:
+f(int, int)	best match
+f(double, double)
+
+(d) f(2.56, 3.14)
+viable functions:
+f(int, int)
+f(double, double)	best match

@@ -1,0 +1,2 @@
+(a) and (b) are similiar in that the second declaration both adds low-level const to the parameter.const argument and non-const argument will be treated differently.
+(c) is illegal,for the top-level const is ignored in function declaration.
