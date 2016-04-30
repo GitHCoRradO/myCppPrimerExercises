@@ -1,0 +1,5 @@
+int func1(int, int);
+typedef int func1P(int, int);
+typedef int (*func1P1)(int, int);
+vector<func1P *> vec_func1P;
+vector<func1P1> vec_func1P1;
