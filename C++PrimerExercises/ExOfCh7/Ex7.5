@@ -1,0 +1,7 @@
+#include <string>
+struct Person {
+	string person_name() const {	return Name; }		//both person_name and person_address are const member functions,for I think we do not need to write to Name a-
+	string person_address() const {	return Address; }	//nd Address through these member functions,just like the isbn function of Sales_data class.
+	string Name;
+	string Address;
+};
