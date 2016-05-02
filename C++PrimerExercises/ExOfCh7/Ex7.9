@@ -1,0 +1,20 @@
+#include <string>
+#include <iostream>
+using std::istream;
+using std::ostream;
+struct Person {
+	string person_name() const {	return Name; }		
+	string person_address() const {	return Address; }
+	string Name;
+	string Address;
+};
+istream &read(istream &, Person &);
+ostream &print(ostream &, const Person &);
+istream &read(istream &is, Person &po) {
+	is >> po.Name >> po.Address;
+	return is;
+}
+ostream &print(ostream &os, const Person &po) {
+	os << po.Name << " " <<  po.Address;
+	return os;
+}
