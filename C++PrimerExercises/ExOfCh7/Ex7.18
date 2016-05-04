@@ -1,0 +1,7 @@
+Encapsulation is the separation of implementation from interface.It hides the impleme-
+ntation details of a type.In C++,encapsulation is enforced by putting the implementat-
+ion in the private part of a class.
+Encapsulation provides two important advantages:
+User code cannot inadvertently corrupt the state of an encapsulated object.
+The implementation of an encapsulated class can change over time without requiring ch-
+anges in user-level code.

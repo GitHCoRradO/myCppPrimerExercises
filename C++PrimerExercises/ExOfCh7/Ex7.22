@@ -1,0 +1,18 @@
+#include <string>
+#include <iostream>
+using std::istream;
+using std::ostream;
+class Person {
+public:
+	Person() = default;
+	Person(const string &s1, const string &s2) : Name(s1), Address(s2) { }	//added later on....
+	Person(istream &);
+	string person_name() const {	return Name; }		
+	string person_address() const {	return Address; }
+private:
+	string Name;
+	string Address;
+};
+Person::Person(istream &is) {
+	read(is,*this);
+}

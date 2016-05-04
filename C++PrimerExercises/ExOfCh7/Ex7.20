@@ -1,0 +1,8 @@
+friend is a mechanism by which a class grants access to its nonpublich members.They have the same rights as members.
+Pros:
+1.the usefuls functions can refer to class members in the class scope without a prefix of the class name.
+2.friends can access all nonpublic members conveniently.
+3.making code more readable to users of the classes.
+Cons:
+1.weakens encapsulation and in turn maintainability.
+2.code verbosity:declarations inside and outside the class.

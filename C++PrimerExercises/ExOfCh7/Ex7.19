@@ -1,0 +1,2 @@
+the constructors and the person_name(),person_address() functions defined as public.user code needs the constructors to create objects of Person.and user code may need to know about the data info(Name and Address) of an object of Person via public member functions person_name() and person_address().
+and the data members defined as private.for these data members cannot be changed by user code.

@@ -1,0 +1,6 @@
+We can define a class type using either keyword.The only difference between struct an-
+d class is the default access level.
+A class may define members before the first access specifier.Access to such members d-
+epends on how the class is defined.If we use the struct keyword,the members defined b-
+efore  the first access specifier are public;if we use class,then the members are pri-
+vate.
