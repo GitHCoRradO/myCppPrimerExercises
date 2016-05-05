@@ -1,0 +1,4 @@
+yes.
+cursor,height,width have type std::string::size_type.and contents has std::string type.
+when we copy or assign objects of Screen type,its data members are copied or assigned according to the rules of the std::string class.
+As is written on page 267--the synthesized versions for copy,assigment,and destruction work correctly for classes that have vector or string members--we do not need to bother much about how std::string class deals with the copy and assignment work.

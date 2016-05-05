@@ -1,0 +1,7 @@
+if so,
+myScreen.move(4, 0).set('#').display(cout); would print XXXXXXXXXXXXXXXXXXXX#XXXX
+
+the original myScreen is not changed.
+
+and
+myScreen.display(cout); would print XXXXXXXXXXXXXXXXXXXXXXXXX
