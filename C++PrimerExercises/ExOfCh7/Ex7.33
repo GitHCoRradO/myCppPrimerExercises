@@ -1,0 +1,7 @@
+return type not in scope of class Screen.
+
+Correted into:
+
+Screen::pos Screen::size() const {
+	return height * width;
+}

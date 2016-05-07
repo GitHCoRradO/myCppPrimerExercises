@@ -1,11 +1,25 @@
-#ifndef EX7_23_24_27_H
-#define EX7_23_24_27_H
+#ifndef EX7_23_24_27_32_H
+#define EX7_23_24_27_32_H
 
+#include <vector>
 #include <string>
 #include <iostream>
 using std::string;
+using std::vector;
+
+class Screen;
+
+class Window_mgr {
+public:
+        using ScreenIndex = vector<Screen>::size_type;
+        void clear(ScreenIndex);
+private:
+        vector<Screen> screens;		//I want to be able to initialize screens. failed.
+};
 
 class Screen {
+	friend void Window_mgr::clear(ScreenIndex);
+
 public:
 	//type member:
 	typedef string::size_type pos;
@@ -53,6 +67,11 @@ inline Screen &Screen::set(char c) {
 inline Screen &Screen::set(pos r, pos col, char ch) {
 	contents[r * width + col] = ch;
 	return *this;
+}
+
+void Window_mgr::clear(ScreenIndex i) {
+        Screen &s = screens[i];
+        s.contents = string(s.height * s.width, ' ');
 }
 
 #endif

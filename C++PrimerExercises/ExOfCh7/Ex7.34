@@ -1,0 +1,7 @@
+Names used in declarations,including names used for the return type and types in the parameters list,must be seen before they are used.
+
+in the light of this,
+void dummy_fcn(pos height);		//it uses unknown type name for its parameter.
+pos cursor = 0;
+pos height = 0, width = 0;		//these declarations use unknown type name.
+					//pos cannot be found in the class body before these declarations.and it cannot be found in the enclosing scope of the class before the class definition.

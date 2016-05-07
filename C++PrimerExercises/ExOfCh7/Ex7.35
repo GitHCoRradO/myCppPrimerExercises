@@ -1,0 +1,16 @@
+typedef string Type;
+Type initVal();
+class Exercise {
+public:
+	typedef double Type;
+	Type setVal(Type);	//both Type are alias for double
+	Type initVal();		//Type is alias for double.and initVal() hides the outer function with the same name.
+private:
+	int val;
+};
+Type Exercise::setVal(Type parm) {		//this definition appears outside the definition of class Exercise.the return type is resolved as typedef string Type.
+	val = parm + initVal();			//since Exercise::setVal is declared,any subsequent names would be resovled in the class Exercise.
+	return val;				//so the parameter type Type is an alias for double.val and initVal() are both members of class Exercise.
+}						//initVal() must be defined before this definition of setVal(),since we are here to call it.
+						//since the return type does match the member function Type setVal(),this definition is in error.
+						//we should change return type into Exercise::Type.
