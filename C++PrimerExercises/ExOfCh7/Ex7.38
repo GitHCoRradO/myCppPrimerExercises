@@ -1,0 +1,6 @@
+Take the Sales_data class for instance.
+class Sales_data {
+public:
+	Sales_data(std::istream &is = std::cin) { read(is, *this); }
+	//other members
+};

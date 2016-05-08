@@ -1,0 +1,5 @@
+Corrected into:
+struct X {
+	X (int i, int j) : rem(i % j), base (i) { }
+	int rem, base;
+};

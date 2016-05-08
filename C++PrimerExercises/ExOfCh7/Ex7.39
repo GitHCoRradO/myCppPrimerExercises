@@ -1,0 +1,2 @@
+It may not be legal.
+if these two constructors both has default arguments like that,when creating an object without an initializer ,it would be ambiguous.the complier does not which constructor to call.

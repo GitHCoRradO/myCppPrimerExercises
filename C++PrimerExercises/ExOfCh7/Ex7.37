@@ -1,0 +1,3 @@
+fisrt_item uses the Sales_data(std::istream &is) constructor,and its data members values depends on the cin stream.
+next uses the Sales_data(std::string s = "") constructor;its data member values are as follows: bookNo("",which is empty sring), units_sold(0),revenue(0).
+last uses the Sales_data(std::string s = "") constructor;its data member values are as follows: bookNo("9-999-99999-9"), units_sold(0), revenue(0).

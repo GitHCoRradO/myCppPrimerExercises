@@ -1,0 +1,12 @@
+class Date {
+public:
+	//constructors:
+	Date() = default;
+	Date(unsigned y, unsigned m, unsigned d) : Year(y), Month(m), Day(d) { }
+	Date(std::istream &is) { }
+private:
+	unsigned Year = 2016, Month = 1, Day = 1;
+};
+Date::Date(std::istream &is) {
+	is >> Year >> Month >> Day;
+}
