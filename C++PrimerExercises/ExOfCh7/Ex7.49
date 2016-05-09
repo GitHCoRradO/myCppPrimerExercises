@@ -1,0 +1,8 @@
+(a) and (b)
+s is first implicitly converted to a temporary Sales_data object.then the temporary object is passed to the parameter.
+in the case of (a),the temp object is copied to the parameter,creating a new object that is the parameter.
+(in the case of (b),the parameter is a reference to the temp object.)
+in the case of (b),the parameter is a plain reference,we cannot bind a plain reference to a temporary object(Page 62).so this is illegal.
+(c)
+this function is a const member function.yet,it returns *this.it changes(writes to) the object on which it operates.
+this function will not compile.

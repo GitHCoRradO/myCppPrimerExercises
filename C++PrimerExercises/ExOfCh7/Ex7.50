@@ -1,0 +1,4 @@
+class Person has only 3 constructors.
+Person();	//cannot be made explicit
+Person(const string &, const string &);	//cannot be made explicit
+Person(std::istream &)		//can be made explicit to suppress implicit conversions.

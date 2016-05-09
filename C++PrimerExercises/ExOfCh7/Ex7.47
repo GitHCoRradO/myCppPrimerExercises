@@ -1,0 +1,6 @@
+making the constructor explicit
+pros:
+1.prevent the use of a constructor in a context that requires an implicit conversion.for instance,the string null_book probably represents a nonexistent ISBN.
+2.prevent the copy form of initialization.
+cons:
+1.sometimes contexts that require implicit conversions are not so bad.on the contrary,these contexts may be a bit convenient for users.

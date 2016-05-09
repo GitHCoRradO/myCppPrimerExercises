@@ -1,0 +1,4 @@
+Illegal.
+class NoDefault has no default constructor.
+vector<NoDefault> vec(10);
+creates a vector of size 10,each element value initialized.

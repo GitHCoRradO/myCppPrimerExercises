@@ -1,0 +1,9 @@
+(a) untrue
+we can provide a class without any constructor.if a class does not define any constructor,the compiler might generate a so-called synthesized default constructor for it.
+(b) untrue
+A default constructor is one that is used when an object is created and no initializer is supplied.
+A constructor that supllies default arguments for all its parameters also defines the default constructor.
+(c) untrue
+the class should still define one.( I am not very clear about what this "meaningful" refers.)
+(d) untrue
+the compiler generates a default constructor automatically only if a class declares no constructors.

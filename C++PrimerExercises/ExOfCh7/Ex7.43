@@ -1,0 +1,12 @@
+class NoDefault {
+public:
+	//constructor
+	NoDefault(int i) { }
+};
+class C {
+public:
+	//constructor:
+	C() : memb(0) { }
+private:
+	NoDefault memb;
+};
