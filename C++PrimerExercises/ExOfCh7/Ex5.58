@@ -1,0 +1,6 @@
+I am so confused about all these declaration,definition and initialization things.
+check out:
+https://github.com/Mooophy/Cpp-Primer/tree/master/ch07#exercise-758
+in the example solution in the link above:
+problem 1:why cannot we specify an in-class initializer(vecSize) inside parentheses?moreover,does it have anything to do with the vector library?
+problem 2:why do we have to specify Example::vecSize after Example::vec has declared the scope(Example::)?

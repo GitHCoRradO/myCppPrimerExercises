@@ -1,0 +1,6 @@
+Sales_data item = {"978-0590353403", 25, 15.99};
+legal.
+equivalent to:
+item.bookNo = string("978-0590353403");
+item.units_sold = 25;
+item.revenue = 15.99;

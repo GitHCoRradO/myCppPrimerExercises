@@ -1,0 +1,6 @@
+A static class member is one that is associated with the class itself,ranther than with individual objects of the class type.
+each object of the class type shares the static class members.if the contents of
+static class members is changed,each object shares the updated value.
+Differences between static members and ordinary members:
+1.A static data member can have incomplete type.
+2.A static member can be used as a default arugment for a member function.
