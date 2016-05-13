@@ -1,0 +1,14 @@
+//only 1 change is needed.learn to use strm.str(s)
+
+string line, word;
+vector<PersonInfo> people;
+istringstream record;
+while (getline(cin,line)) {
+	PersonInfo info;
+	//record.clear();	// is this neccessary?
+	record.str(line);
+	record >> info.name;
+	while (record >> word)
+		info.phones.push_back(word);
+	people.push_back(info);
+}

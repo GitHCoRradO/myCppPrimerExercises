@@ -1,0 +1,5 @@
+the string library default initializes strings as empty one.
+if we provide in-class initializers for name and phones,it will be meaningless information.
+
+//another answer:
+we need an aggregate class here. so it should have no in-class initializers.

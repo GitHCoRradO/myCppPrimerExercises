@@ -1,0 +1,11 @@
+string line, word;
+vector<PersonInfo> people;
+ifstream ifst("./phonecontact.txt");
+while (getline(ifst,line)) {
+	PersonInfo info;
+	istringstream reacord(line);
+	record >> info.name;
+	while (record >> word)
+		info.phones.push_back(word);
+	people.push_back(info);
+}

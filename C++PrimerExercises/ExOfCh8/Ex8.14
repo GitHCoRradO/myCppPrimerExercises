@@ -1,0 +1,5 @@
+entry and nums declared as const auto & for that we do not need to write to the entries and the corresponding phone numbers.declaring them as const can in a way prevent us from inad-
+vertently changing the records.		//this partly explains the "const"
+
+// in addition
+declared as & for that these objects are all of class type.using reference will be more effective and it avoids copying.
