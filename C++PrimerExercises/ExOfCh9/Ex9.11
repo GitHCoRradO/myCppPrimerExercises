@@ -1,0 +1,8 @@
+vector<int> v1;  				//default constructor.v1 is empty. #1
+vector<int> v2(v1);				//v2 is a copy of v1. #2
+vector<int> v3 = v1;				//v3 is a copy of v1. #2
+vector<int> v4{1, 2, 3, 4, 5};			//list initialization. #3
+vector<int> v5 = {1, 2, 3, 4, 5};		//list initialization. #3
+list<double> li1(v5.begin(), v5.end());		//li1 is a copy of the elements in the range denoted by iterators v5.begin() and v5.end(). #4
+vector<int> v6(10);				//v6 holds 10 elements,each of which has value 0. #5
+vector<int> v7(10, 1);				//v7 holds 10 elements,each of which has value 1. #6

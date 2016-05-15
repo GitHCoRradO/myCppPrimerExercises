@@ -1,0 +1,7 @@
+1. 
+To create a container as a copy of another container,the container and element types must be identical.
+when we pass iterators,there is no requirements that the container and element types be identical.and the element types in the new and original containers can differ as long as it is 
+possible to convert the elements we are coping to the element type of the container we are initializing.
+2.
+coping a container makes the new container an exact copy of the copied container.
+passing iterators allows us to create a new container that is a subsequence of the original container.

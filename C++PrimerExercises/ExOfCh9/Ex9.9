@@ -1,0 +1,3 @@
+differences between begin and cbegin functions:
+begin function is overloaded.if it is called on a nonconst object,it returns the container's iterator type.if it is called on a const object,it returns the container's const_iterator type.
+cbegin function will always return the container's const_iterator type,regardless of the object's constness.	//are cbegin and cend const members?

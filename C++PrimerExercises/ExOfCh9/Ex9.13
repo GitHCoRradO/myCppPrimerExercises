@@ -1,0 +1,6 @@
+list<int> li = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+vector<int> veci = {1, 2, 3, 4, 5, 6, 7};
+
+vector<double> vecd1(li.begin(), li.end());
+
+vector<double> vecd2(veci.begin(), veci.end());
