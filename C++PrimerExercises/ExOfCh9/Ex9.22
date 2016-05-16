@@ -1,0 +1,9 @@
+in the while loop.iter should be incremented.or the while condition might always yield true.
+
+corrected into:
+vector<int>::iterator iter = iv.begin(), mid = iv.begin() + iv.size() / 2;
+while (iter != mid) {
+	if (*iter == some_val)
+		iv.insert(iter, 2 * some_val);		//container operations might invalidate iterators,pointers,references into the container.
+	++iter;
+}
