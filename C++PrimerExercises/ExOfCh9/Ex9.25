@@ -1,0 +1,4 @@
+if elem1 and elem2 are equal,which includes the case that elem1 and elem2 are both off-the-end iterator,then the iterator range denoted by elem1 and elem2 includes no element at all.
+so this erasure process deletes no element.
+if elem2 is the off-the-end iterator,then the erasure process deletes elements denoted by elem1 up to the last element in the container.
+
