@@ -1,0 +1,2 @@
+if vec is a vector that contains built-in type elements,vec.resize(100) will add 75 value initialized elements to the back of vec.then vec.resize(10) will discard 90 elements from the back of vec making its size 10.
+if vec is a vector that contains class type elements,and that class has a default constructor,vec.resize(100) will add 75 default constructed elements to the back of vec.then vec.resize(10) will discard 90 elements from the back of vec making its size 10.if that class type does not have a default constructor,vec.resize(100) will result in error.
