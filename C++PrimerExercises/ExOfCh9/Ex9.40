@@ -1,0 +1,6 @@
+words_read	after_resized_capacity
+256		1024
+512		1024
+1000		2048
+1048		2048
+(all these figures,figured out thoughtfully, not tested by my compiler. ;-))

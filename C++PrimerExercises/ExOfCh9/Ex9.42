@@ -1,0 +1,1 @@
+I will create an empty string str.then call str.reserve(100) to ensure the string get enough space to hold at least 100 characters.

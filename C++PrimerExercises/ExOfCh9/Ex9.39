@@ -1,0 +1,2 @@
+the while loop will read word from standard input and store them in svec.if there are more words than 1024 to read from cin,our vector's capacity will be automatically increased--most implementations will double the current capacity--to accommodate new elements.
+after the while loop, resize function adds half of svec's current size to the size itself,adding empty strings to svec at the back.if svec.size() + svec.size()/2 is greater than svec's current capacity,then implementation will automatically increase svec.capacity() to accommodate the new elements.
