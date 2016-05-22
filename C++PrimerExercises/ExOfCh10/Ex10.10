@@ -1,0 +1,2 @@
+The library algorithms do not themselves execute container operations.They operate solely in terms of iterators and iterator operations instead of container operations.
+Thus, the algorithms cannot (directly) change the size of containers.

@@ -1,0 +1,31 @@
+(a)
+vector<int> vec;
+list<int> lst;
+int i;
+while (cin >> i)
+	lst.push_back(i);
+copy(lst.cbegin(), lst.cend(), vec.begin());
+
+/*
+error. vec is empty.
+
+correcte the last statement to the following would validate the code fragment:
+
+copy(lst.cbegin(), lst.cend(), back_inserter(vec));
+
+*/
+(b)
+vector<int> vec;
+vec.reserve(10);
+fill_n(vec.begin(), 10, 0);
+
+/*
+error.
+
+reserve memeber function changes the capacity of vec instead of its acctual size,which is 0.
+fill_n function tries to write to the non-existent elements in vec.
+
+change the second statement to the following would validate the code fragment:
+vec.resize(10);
+
+*/
