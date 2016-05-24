@@ -1,0 +1,4 @@
+void func() {
+	int i = 0;
+	auto f = [i](int j) { return i + j; };
+}

@@ -1,0 +1,1 @@
+auto cnt = count_if(vec.begin(), vec.end(), [](const string &s) { return s.size() > 6;});

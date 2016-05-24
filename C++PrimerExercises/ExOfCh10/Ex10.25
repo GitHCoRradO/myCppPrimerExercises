@@ -1,0 +1,14 @@
+bool check_size(const string &s, string::size_type sz) {
+	return s.size() <= sz;
+}
+
+void biggies(vector<string> &words, vector<string>::size_type sz) {
+	elimDups(words);
+	stable_sort(words.begin(), words.end(), [](const string &a, const string &b) { return a.size() < b.size(); });
+	auto f = bind(check_size, _1, sz);
+	auto wc = partition(words.begin(), words.end(), f);
+	auto cnt = words.end() - wc;
+	cout << cnt << " " << make_plural(cnt, "word", "s") << " of length " << sz << " or longer" << endl;
+	for_each(wc, words.end(), [](const string &s) { cout << s << " "; });
+	cout << endl;
+}

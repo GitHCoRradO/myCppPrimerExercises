@@ -1,0 +1,9 @@
+void biggies(vector<string> &words, vector<string>::size_type sz) {
+	elimDups(words);
+	stable_sort(words.begin(), words.end(), isShorter);
+	auto wc = find_if(words.begin(), words.end(), [sz](const string &a) { return a.size() >= sz; });
+	auto cnt = words.end() - wc;
+	cout << cnt << " " << make_plural(count, "word", "s") << " of length" << sz << " or longer" << endl;
+	for_each(wc, words.end(), [](const string &s) { cout << s << " "; });
+	cout << endl;
+}

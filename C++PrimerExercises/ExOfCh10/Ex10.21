@@ -1,0 +1,9 @@
+int val = 100;
+auto f = [&]() -> bool {
+	if (val > 0)
+		--val;
+	if (val == 0)
+		return true;
+	else
+		return false;
+};
