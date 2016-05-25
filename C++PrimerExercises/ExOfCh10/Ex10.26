@@ -1,0 +1,3 @@
+1.	back_inserter creates an iterator that uses push_back.
+2.	front_inserter creates an iterator that uses push_front.
+3.	inserter creates an iterator that uses insert.and the second argument to this function,which is an iterator into the given container,denotes which element to insert ahead of.
