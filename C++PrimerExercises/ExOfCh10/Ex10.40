@@ -1,0 +1,3 @@
+copy: first and second arguments are input iterators.last argument is output iterator.
+reverse: bidirectional iterator
+unique: forward iterator

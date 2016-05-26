@@ -1,0 +1,5 @@
+input iterators			==, !=, ++, *, ->
+output iterators		++, *
+forward iterators		==, !=, ++, *, ->
+bidirectional iterators		==, !=, ++, --, *, ->
+random-access iterators		==, !=, <, <=, >, >=, ++, --, +, +=, -, -=, -(two iterators), *, ->, iter[n] == *(iter + n)
