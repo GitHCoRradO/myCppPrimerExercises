@@ -1,0 +1,4 @@
+void elimDups(list<string> &words) {
+	words.sort(words.begin(), words.end());
+	words.unique(words.begin(), words.end());
+}

@@ -1,0 +1,11 @@
+replace(beg, end, old_val, new_val);
+check the sequence denoted by beg and end.replace each element that has old_val with new_val.
+
+replace_if(beg, end, pred, new_val);
+check the sequence denoted by beg and end.replace each element that when passed to pred function makes pred return non-zero value with new_val.
+
+replace_copy(beg, end, dest, old_val, new_val);
+copy the sequence denoted by beg and end to dest without copying those elements that have value old_val;instead,replace these elements with new_val for the copying process.
+
+replace_copy_if(beg, end, dest, pred, new_val);
+do almost the same thing as replace_copy does,except that the checking process for elements with old_val is now done by pred function.
