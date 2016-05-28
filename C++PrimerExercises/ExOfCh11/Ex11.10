@@ -1,0 +1,4 @@
+define a map from vector<int>::iterator to int----ok
+vector<int>::iterator has the operator <
+defien a map from list<int>::iterator to int---- not ok
+list<int>::iterator does not has the operator <

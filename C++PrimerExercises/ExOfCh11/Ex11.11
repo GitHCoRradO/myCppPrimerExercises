@@ -1,0 +1,3 @@
+bool (*ptr)(const Sales_data&, const Sales_data&) = compareIsbn;
+//using ptr = bool (*)(const Sales_data&, const Sales_data&);
+multiset<Sales_data, ptr> bookStore(ptr);
