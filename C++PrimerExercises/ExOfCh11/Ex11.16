@@ -1,0 +1,4 @@
+map<int, int> mp;
+mp[1] = 1;
+auto it = mp.begin();
+it->second = 2;

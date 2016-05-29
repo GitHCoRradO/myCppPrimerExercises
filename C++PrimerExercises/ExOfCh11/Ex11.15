@@ -1,0 +1,5 @@
+map<int, vector<int>>
+
+mapped_type	vector<int>
+key_type	int
+value_type	pair<int, vector<int>>

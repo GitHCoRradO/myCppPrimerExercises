@@ -1,0 +1,3 @@
+using ptr = bool (*)(const Sales_data&, const Sales_data&);
+multiset<Sales_data, ptr> bookStore(compareIsbn);
+multiset<Sales_data, ptr>::iterator it = bookstore.begin();
