@@ -1,0 +1,3 @@
+map<key_Type, mapped_Type> m;
+type of key_Type or types that can be converted to key_Type can be used to subscript m.
+mapped_Type would be the return type of the subscript operator.

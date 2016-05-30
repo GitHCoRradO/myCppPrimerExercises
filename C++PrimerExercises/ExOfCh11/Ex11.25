@@ -1,0 +1,4 @@
+vector<int> v;
+v[0] = 1;
+
+v is empty. v[0] tries to access the element of v at position 0,which is non-existent.this is illegal.

@@ -1,0 +1,4 @@
+map<int, int> m;
+m[0] = 1;
+
+this fragment of code insert a pair {0, 1} into m.

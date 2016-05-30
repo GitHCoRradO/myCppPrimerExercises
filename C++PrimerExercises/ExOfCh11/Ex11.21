@@ -1,0 +1,21 @@
+while (cin >> word)
+	++word_count.insert({word, 0}).first->second;
+
+these 3 opeartors
+. () ->
+have the same precedence.they are all left associative.
+they have higher precedence than prefix increment operator ++
+
+so the loop body is equivalent to the following:
+++((((word_count.insert)({word, 0})).first)->second);
+
+word_count.insert selects the insert member from word_count.its parameter list is ({word, 0}).
+this call inserts a pair {word, 0} into word_count.it returns a pair,the first data member of which is an iterator into word_count,the second
+data member of which is of bool type.
+then (word_count.insert({word, 0})).first) selects the first data member of return above,which is the iterator,which I here name as iter.
+iter->second fetches the second data member of the element of word_count,which iter denotes.
+iter->second is of size_t type.then ++iter->second increment iter->second.
+
+this statement is equivalent to:
+auto ret = word_count.insert({word, 0});
+++ret.first->second;
