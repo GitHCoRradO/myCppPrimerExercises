@@ -1,0 +1,3 @@
+map<string, vector<int>> m;
+string k;
+map<string, vector<int>>::iterator iter = m.find(k);

@@ -1,0 +1,6 @@
+//had we used the subscript operator,each word that is not in the rule file would be inserted into the map with its corresponding transformation word being empty string.
+//furthermore,when we call word_transform on two files,the words in the input file that are not in the rule list would be replaced by empty string.
+
+
+the second parameter of transform is const map<string, string> &.notice the const.
+subscripting a key that is not in the map would try to insert a new element.yet the map is const.writing to it is invalid.

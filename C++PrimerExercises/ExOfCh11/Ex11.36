@@ -1,0 +1,1 @@
+if a word has no transformation phrase,the program would throw a runtime_error.

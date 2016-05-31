@@ -1,0 +1,2 @@
+when I use multimap or multiset,and I want to know how many values have the same key,I will use count.
+when I only want to know whether a key is in the map or set,I do not need to know how many values have the same key,I would use find.

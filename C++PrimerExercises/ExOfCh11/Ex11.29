@@ -1,0 +1,4 @@
+in such case,upper_bound and lower_bound return the same iterator.and equal_range return a pair of iterators,which are both equal to that one returned from upper_bound.
+if the KEY is no less than the greatest key in the container,then upper_bound and lower_bound return off-the-end iterator.
+if the KEY is less than the greatest key present,then upper_bound and lower_bound return an iterator denoting the first element with a key greater than KEY.
+

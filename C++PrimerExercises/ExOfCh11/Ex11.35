@@ -1,0 +1,2 @@
+if a word to be transformed appears multiple times in the rule list,using insert function would only record the first transformation rule of that word.
+the subscripting version records the last transformation rule of that word.

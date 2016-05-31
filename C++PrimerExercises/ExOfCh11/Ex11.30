@@ -1,0 +1,4 @@
+pos.first->second
+
+pos.first fetches an iterator which is equal to the one returned from lower_bound.
+pos.first->second fectches the second data memeber of the element which pos.first denotes.
