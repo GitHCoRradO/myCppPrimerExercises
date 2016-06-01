@@ -14,7 +14,7 @@ int main() {
 		text.push_back(line);
 	for (auto it = text.begin(); it !=text.end() && !it->empty(); ++it) {
 		for(auto &c : *it)
-			c = toupper(c);
+			c = toupper(c);	//no checking if c is a letter.process every character. To be solved.
 	}
 	for (auto it = text.begin(); it !=text.end() && !it->empty(); ++it)
 		cout << *it << endl;

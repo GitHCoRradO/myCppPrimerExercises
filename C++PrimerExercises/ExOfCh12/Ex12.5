@@ -1,0 +1,6 @@
+keyword explicit prevents automatic conversions from an initializer_list to StrBlob.
+Pros:
+1.The compiler will not use this constructor in an implicit conversion.
+Cons:
+1.explicit constructors can be used only for direct initialization.we cannot use the copy form of initilization.
+2.when we try to create a temporary StrBlob object,we must always supply the type and the initializer_list instead of letting the compiler generate an implicit conversion from il to StrBlob.
