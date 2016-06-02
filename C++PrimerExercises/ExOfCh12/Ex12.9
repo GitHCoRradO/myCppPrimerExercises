@@ -1,0 +1,9 @@
+int *q = new int(42), *r = new int(100);
+r = q;
+auto q2 = make_shared<int>(42), r2 = make_shared<int>(100);
+r2 = q2;
+
+//both q and r point to an int in free store.
+//r = q; 	this statement assigns q to r.now both q and r point to the same object in free store.yet the original object r points to in free store is not freed.now no pointer points to that object.we have no access to that object.this results in a memory leak.
+//both q2 and r2 are smart pointers.
+//r2 = q2;	this statement assigns q2 to r2.and it reduces the reference count of the original int r2 points to down to 0.that object is freed after this assignment.this assignment add 1 to the reference count q2 points to.now that object has 2 users.

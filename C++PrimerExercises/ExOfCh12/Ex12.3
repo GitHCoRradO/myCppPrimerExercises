@@ -1,6 +1,20 @@
+/*
 the complier does not complain a thing about adding const versions of push_back and pop_back.
 
 push_back and pop_back does not modify data,which is a pointer, but rather the underlying vector data points to,which is perfectly legal to do with a const pointer or a plain pointer.
 
 yet adding const push_back and pop_back does not seem quite logical.it may not be needed.
 const or not const,we are only changing its underlying object.
+*/
+
+check out:https://github.com/Mooophy/Cpp-Primer/tree/master/ch12#exercise-123
+
+without the const versions of push_back pop_back,it will result in compiler error when calling push_back or pop_back on a const StrBlob object.
+by default, the 'this' pointer in each member (non-const) function is a const pointer to non-const class type.we cannot bind 'this' to a const object.This fact,in turn, means we cannot call an ordinary memeber function on a const object.
+
+logically,we do not know or even care how StrBlob is implemented,for data is its private data member.
+we think it is just like vector.it acts like a vector.
+without the const push_back member,any call to push_back on a const StrBlob object would result in compile error,which is quite logical.
+why would be possible for users to add or remove elements of a const StrBlob object?
+
+if we add the const versions of push_back and pop_back,then calling push_back and pop_back would be alright!anyway,we are not changing the 'data',which is a smart pointer.the code will compile.but the performance might be illogical.
