@@ -1,0 +1,19 @@
+auto p = new int();	//p is a built-in pointer pointing to an object of type int with value 0 in free store.
+auto sp = make_shared<int>();	//sp resembles p in almost every aspect except that sp is a shared_ptr.
+
+(a)	process(sp);
+legal.
+pass sp to function process.
+
+(b)	process(new int());
+illegal.
+we cannot implicitly convert a built-in pointer to shared_ptr.
+
+
+(c)	process(p);
+illegal.
+again.we cannot implicitly convert a built-in pointer to shared_ptr.
+
+(d)	process(shared_ptr<int>(p));
+legal.
+shared_ptr<int>(p) constructs a temporary shared_ptr from p and pass that temporary shared_ptr to process.

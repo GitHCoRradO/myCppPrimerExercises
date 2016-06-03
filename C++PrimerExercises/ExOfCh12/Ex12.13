@@ -1,0 +1,5 @@
+auto sp = make_shared<int>();
+auto p = sp.get();
+delete p;
+
+//after 'delete p;',sp will become a dangling pointer.

@@ -1,0 +1,7 @@
+process(shared_ptr<int>(p.get()));
+
+p.get() returns a built-in pointer pointing to the object p points to.
+shared_ptr<int>(p.get()) creates a temporary shared_ptr,which I name as q,initialized from p.get().
+q and p are independent shared_ptrs,both of which points to a shared object in free store.
+when process terminates,q will go out of scope.and the object to which q points will be freed.
+hence,p will become a dangling pointer.
