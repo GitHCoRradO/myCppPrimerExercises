@@ -1,0 +1,2 @@
+I think the 2-statement version is better for it is more readable,easier to understand.
+the 1-statement version requires readers to unwind the expression that follows return.

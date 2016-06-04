@@ -1,0 +1,1 @@
+because shared_ptr can be copied or assigned.a dynamically allocated object can be shared by many shared_ptr s.we do not need similar member function to shift ownership from one shared_ptr to another.

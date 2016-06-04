@@ -11,7 +11,7 @@ void end_connection(connection *p) { disconnect(*p); }
 
 void f(destination &d) {
 	connection c = connect(&d);
-	shared_ptr<connection> p(&c, [&](){ disconnect(*p); });
+	shared_ptr<connection> p(&c, [](conection *p){ disconnect(*p); });	//may not use lambda like: [&]() { disconnect(*p); }
 	/*....*/
 }
 

@@ -1,0 +1,15 @@
+int ix = 1024, *pi = &ix, *pi2 = new int(2048);
+typedef unique_ptr<int> IntP;
+
+(a)	IntP p0(ix);
+illegal.	trying to initialize unique_ptr with a int value.
+(b)	IntP p1(pi);
+illegal.	trying to initialize unique_ptr with a plain pointer to local object.
+(c)	IntP p2(pi2);
+legal.
+(d)	IntP p3(&ix);
+illegal.	&ix is a reference to a pointer to ix.the reason is the same as that of (b)
+(e)	IntP p4(new int(2048));
+legal.
+(f)	IntP p5(p2.get());
+illegal.	trying to initialize unuque_ptr from another unique_ptr.
