@@ -3,13 +3,25 @@ typedef unique_ptr<int> IntP;
 
 (a)	IntP p0(ix);
 illegal.	trying to initialize unique_ptr with a int value.
+		error: invalid conversion from 'int' to 'std::unique_ptr<int>::pointer { aka int* }' [-fpermissive]
 (b)	IntP p1(pi);
-illegal.	trying to initialize unique_ptr with a plain pointer to local object.
+bad code.	trying to initialize unique_ptr with a plain pointer to local object.
+The code below can compile, but will cause error at run time.
+The reason is that when the unique_ptr p1 is out of scope, delete will be called
+to free th object. But the object is not allocate using new.Thus, an error
+would be thrown by operating system.
+
 (c)	IntP p2(pi2);
-legal.
+bad code.
+This code can compile, but cause a dangling pointer at run time.
+The reason is that the unique_ptr will free the object the raw pointer
+is pointing to.
+
 (d)	IntP p3(&ix);
-illegal.	&ix is a reference to a pointer to ix.the reason is the same as that of (b)
+bad code.	when the unique_ptr goes out of scope,it will call delete to free an object not allocated using new.
+
 (e)	IntP p4(new int(2048));
 legal.
 (f)	IntP p5(p2.get());
-illegal.	trying to initialize unuque_ptr from another unique_ptr.
+bad code. double free or corruption at run time.
+two unique_ptrs are pointing to the same object.when both go out of scope,operating system will throw double free or corruption.
