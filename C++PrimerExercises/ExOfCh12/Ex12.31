@@ -1,0 +1,4 @@
+if we use a vector instead of a set,
+firstly,we have to examine if a key(string) is already in the map,if it is not,then we create a corresponding value for the new key,
+if it is already in the map,we examine whether the element at the back of the set is the same as the line_no we are trying to insert,in case we are reading a word on the same line
+for multiple times.

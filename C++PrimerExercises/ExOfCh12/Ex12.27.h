@@ -88,6 +88,7 @@ ostream &print(ostream &os, const QueryResult &qrt) {
 	return os;
 }
 
+//search the text each time we run query function,yet the string to set map grows as user search the text each time.
 QueryResult TextQuery::query(const string &s) {
 	const vector<string> &vec_s = *textfile;
 	map<string, unsigned> &m_wordcnt = *word_cnt;

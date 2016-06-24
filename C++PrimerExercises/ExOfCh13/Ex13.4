@@ -1,0 +1,8 @@
+Point global;
+Point foo_bar(Point arg) {		//passing argument to arg,use copy constructor.#1
+	Point local = arg, *heap = new Point(global);	//local = arg.#2	new Point(global) #3
+	*heap = local;	//assignment
+	Point pa[4] = {local, *heap};	//brace initialize elements in an array. #4 #5
+	return *heap;	//nonrefernce return type. #6
+}
+

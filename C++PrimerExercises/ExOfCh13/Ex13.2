@@ -1,0 +1,9 @@
+were it legal,the following fragment of code would never succeed:
+Sales_data sd1(sd);	//assuming sd is a Sales_data object.
+this definition of sd1 calls the constructor
+Sales_data::Sales_data(Sales_data rhs);
+because the parameter is of nonreference type,the argument is copied to initialize the parameter.
+to copy the argument to the parameter,we would have to use the
+Sales_data::Sales_data(Sales_data rhs);
+constructor again.
+this calling cycle might never come to an end,as long as the constructor's parameter is of nonreference type.
