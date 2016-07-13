@@ -1,0 +1,28 @@
+here is a concrete example,
+
+StrBlob sb1;
+StrBlob sb2;
+sb2 = sb1;
+
+both sb1 and sb2 have one non-static private data member.
+assigning sb1 to sb2 is acctually equivalent to the following
+
+sb1.data = sb2.data;
+
+for this data member is a shared_ptr,this assigment uses the copy-assignment operator of shared_ptr class.
+
+after the assigment,the reference count of the previous shared_ptr in sb2 is decremented to 0,and the reference count of the shared_ptr in sb1 to incremented to 2.
+
+as for StrBlobPtr,
+
+StrBlobPtr sbp1,sbp2;
+sbp1 = sbp2;
+
+there are two non-static data members in class StrBlobPtr,one of which is of type size_t,the other of type weak_ptr.
+assigning sbp2 to sbp1 is equivalent to
+
+sbp1.wptr = sbp2.wptr;
+sbp1.curr = sbp2.curr;
+
+using the copy-assignment operator of these member types respectively.
+copying one weak_ptr to another does not change the reference count of the underlying shared object in dynamic memory.

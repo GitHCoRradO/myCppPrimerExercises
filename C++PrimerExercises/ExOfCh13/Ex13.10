@@ -1,0 +1,3 @@
+when a StrBlob object is destroyed,its 'data' member's destructor is run to destroy itself.
+when a StrBlobPtr object is destroyed,its 'curr' data member is of built-in type,in which case nothing is done to destroy curr,and its 'wptr',which is of weak_ptr type,is destroyed
+by running the destructor of class weak_ptr.

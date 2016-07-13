@@ -1,0 +1,7 @@
+bool fcn(const Sales_data *trans, Sales_data accum) {
+	Sales_data item1(*trans), item2(accum);
+	return item1.isbn() != item2.isbn();
+}
+
+3 destructor calls happen.
+parameter accum and local object item1 and item2 go out of scope when the function body ends.these objects are all to be destroyed.
