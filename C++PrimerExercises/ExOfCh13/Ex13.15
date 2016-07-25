@@ -1,0 +1,15 @@
+yes,it does change the output of the previous exercise.
+
+numbered a, b = a, c = b;
+//	assume that a.mysn being 1,b.mysn could be 2,c.mysn could be 3.
+f(a);
+//	arguments of f are passed by value.then the copy constructor of class numbered is used.
+//so f(a) will create a temporary object of type numbered inside the body and print the unique serial number of that object(assuming it being 4)instead of a.
+f(b);	//unique temp serial number being 5
+f(c);	//6
+//these 2 statements work out similarly.
+
+the output will be like:
+4
+5
+6
