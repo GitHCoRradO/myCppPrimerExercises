@@ -1,0 +1,3 @@
+if a destructor is not defined,then when each HasPtr object is destroyed,its corrsponding ps member will not be deleted,such that the memory to which that pointer points will always reside in memory.
+if the class does not define the copy constructor,when we copy objects of HasPtr type,its ps member will be directly copied,which means that different objects of HasPtr type will have their ps members pointing to the same object in dynamic memory.
+when each of these objects goes out if scope,its destructor will be run,deleting the object to which its ps member points,while there may be other objects of HasPtr type which have their ps member pointing to the same memory.`

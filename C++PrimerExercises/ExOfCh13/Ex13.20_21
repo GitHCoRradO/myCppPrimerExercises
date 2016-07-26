@@ -1,0 +1,12 @@
+class TextQuery has 2 private data members,one of which is of shared_ptr type,the other of
+map type.TextQuery does not define its own copy-control members.they are synthesized.
+when we copy,assign,destroy objects of TextQuery type,we use the data members' corresponding
+copy-control members to copy,assign,destroy each of these data members.
+class QueryResult has 3 private data members,one of which is of string type,the other two of
+shared_ptr type.QueryResult neither define its own copy-control members.they are synthesized.
+similarly,when we copy,assign,destroy objects of QueryResult type,we use the data members'
+corresponding copy-control members to do the work for each of these data members.
+
+I do not think these 2 classes need to define their own copy-control members,
+for their data members have well-defined copy-control members,and it would
+work better if I just leave the job to these copy-control members.

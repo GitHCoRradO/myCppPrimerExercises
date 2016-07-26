@@ -1,0 +1,24 @@
+(a)
+
+class TreeNode {
+public:
+	TreeNode() : left(nullptr), right(nullptr) { }
+	TreeNode(const TreeNode &) = delete;
+	TreeNode &operator=(const TreeNode&) = delete;
+private:
+	string value;
+	int count;
+	TreeNode *left;
+	TreeNode *right;
+};
+
+(b)
+
+class BinStrTree {
+public:
+	BinStrTree() : root(nullptr) { }
+	BinStrTree(const BinStrTree &) = delete;
+	BinStrTree &operator=(const BinStrTree&) = delete;
+private:
+	TreeNode *root;
+}

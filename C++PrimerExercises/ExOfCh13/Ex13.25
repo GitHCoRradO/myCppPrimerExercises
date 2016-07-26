@@ -1,0 +1,2 @@
+Copy constructor and copy-assignment operator should dynamically allocate memory for the object's own sake,rather than share the object with the right hand operand.
+StrBlob uses smart pointers to manage its data members.the synthesized version of destructor will call the corresponding destructors of the smart pointers to free the allocated memory.we do not need to deliberatly free the memory in the destructor body.
