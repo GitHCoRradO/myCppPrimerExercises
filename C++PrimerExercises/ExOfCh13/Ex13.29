@@ -1,0 +1,2 @@
+in the HasPtr friend swap function,the data members have built-in types.There is no specific version of swap for the built-in types.In this case,these calls will invoke the library std::swap,instead of the friend swap function of HasPtr.
+thus,it won't result in a recursion loop.

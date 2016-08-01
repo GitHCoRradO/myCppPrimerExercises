@@ -1,0 +1,4 @@
+assigning 1 HasPtr object to another HasPtr object does not allocate more
+dynamic memory.thus,as I see it,swapping 2 objects of HasPtr type is quite
+as efficient as copy and assign.no performance improvement would be achieved.
+there is no need for such a swap function.
