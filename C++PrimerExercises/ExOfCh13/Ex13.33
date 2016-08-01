@@ -1,0 +1,2 @@
+the parameter is Folder& instead of Folder,for we want to save this message in the argument.if the argument is passed by value,then this message will be saved in a temperory Folder which is a copy of the destination Folder.
+if the parameter is const Folder&,then we won't be able to write to that Folder,for the parameter is reference to const.in this case,how is possible to "save" this message in the destination Folder?
