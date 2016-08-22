@@ -1,0 +1,2 @@
+If Message uses the synthesized versions of the copy control members,the copy,assignment,destruction operations will only update the Messages' data members,the corresponding Folders
+in which the Messages used to be in will not sync with the Messages.
