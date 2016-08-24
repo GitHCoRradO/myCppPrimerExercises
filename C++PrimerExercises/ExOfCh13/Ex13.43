@@ -1,0 +1,6 @@
+void StrVec::free() {
+	if (elements)
+		for_each(elements, first_free, [this](const string &s) { alloc.destroy(&s); });	//why must this be captured in the lambda function?
+												//can I use const string & instead of string & in the
+												//lambda parameter list?
+}

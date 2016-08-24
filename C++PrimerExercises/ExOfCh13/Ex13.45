@@ -1,0 +1,6 @@
+we can bind lvalue reference only to lvalues.functions that return lvalue
+references,along with the assigment,subscript,dereference,prefix increment/
+decrement operators,are all examples of expressions that return lvalues.
+we can bind rvalue reference only to rvalues.functions that return a
+nonreference type,along with the arithmetic,relational,bitwise,postfix increment/decrement operators,all yield rvalues.or we can bind an lvalue refernce to
+const to these rvalues.
