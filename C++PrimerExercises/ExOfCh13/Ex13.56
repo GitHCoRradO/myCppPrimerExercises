@@ -1,0 +1,9 @@
+Foo Foo::sorted() const & {
+	Foo ret(*this);
+	return ret.sorted();
+}
+
+when we call sorted() on ret,ret is an lvalue.
+the member function 'Foo Foo::sorted() &&;' can only be called on rvalues.
+thus,here the 'Foo Foo::sorted() const &;' version is called.
+this leads to a recursion.

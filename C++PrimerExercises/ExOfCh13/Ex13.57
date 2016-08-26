@@ -1,0 +1,5 @@
+Foo Foo::sorted() const & { return Foo(*this).sorted(); }
+
+Foo(*this) creates a temperory object of type Foo,which is an rvalue.
+so Foo(*this).sorted() calls the 'Foo Foo::sorted() &&;' member function.
+it is ok to write the version this way.

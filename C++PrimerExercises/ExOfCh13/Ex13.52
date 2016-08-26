@@ -1,0 +1,13 @@
+hp = hp2;
+/*
+hp2 is an lvalue.so the copy constructor is used to construct parameter rhs here.after the copy,rhs and hp2 are independent.
+swap(*this,rhs)  swaps *this and rhs.when the function body ends,rhs goes out of scope and is destroyed.
+*/
+
+hp = std::move(hp2);
+
+/*
+std::move(hp2) returns an rvalue.even though copy constructor and move constructor are both viable in the initialization of
+parameter rhs,move constructor is an exact match.the resources in hp2 are moved into rhs,leaving hp2 in a valid and destructible
+state.then swap(*this, rhs) swaps *this and rhs.finally,when function body ends,rhs goes out of scope and is destroyed.
+*/
