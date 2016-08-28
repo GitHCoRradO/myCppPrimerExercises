@@ -1,0 +1,36 @@
+#ifndef EX_14_5_8_H
+#define Ex_14_5_8_H
+
+#include <iostream>
+using std::istream;
+using std::ostream;
+
+class Date {
+friend istream &operator>>(istream &, Date &);
+friend ostream &operator<<(ostream &, const Date &);
+friend bool operator==(const Date &, const Date &);
+friend bool operator!=(const Date &, const Date &);
+public:
+	//constructors:
+	Date() = default;
+	Date(unsigned y, unsigned m, unsigned d) : Year(y), Month(m), Day(d) { }
+	Date(std::istream &is) { is >> *this; }
+private:
+	unsigned Year = 2016;
+	unsigned Month = 1;
+	unsigned Day = 1;
+};
+istream &operator>>(istream &is, Date &dd) {
+	is >> dd.Year >> dd.Month >> dd.Day;
+	if (!is)
+		dd = Date();
+	return is;
+}
+ostream &operator<<(ostream &os, const Date &date) {
+	os << date.Day << "," << date.Month << "'" << date.Year;
+	return os;
+}
+bool operator==(const Date &, const Date &);
+bool operator!=(const Date &, const Date &);
+
+#endif

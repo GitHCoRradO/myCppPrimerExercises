@@ -1,0 +1,7 @@
+(a)
+the input operator will read 0-201-99999-9 into item.bookNo,then 10 into item.units_sold,then 24.95 into price.after the series of reading,the state of the stream remains valid.then
+item.revenue will be assigned with (item.units_sold * price).finally,is will be returned.
+(b)
+the input operator will read 10(as a string) into item.bookNo,then 24.95(via converting it to unsigned) into item.units_sold.when reading 0-210-99999-9 into price,there is no conversion
+from a string into double.thus,the state of the stream will fail.when testing is as the condition of if,is yields false,then item will be assigned with Sales_data().then the object is
+will be returned.

@@ -1,0 +1,5 @@
+the function body does not check the state of the istream object after reaading into the data members.
+if we give this operator the input (b).
+s.bookNo will be "10".
+s.units_sold will be 24.
+price will have undefined value.thus,s.revenue will be undefined value.

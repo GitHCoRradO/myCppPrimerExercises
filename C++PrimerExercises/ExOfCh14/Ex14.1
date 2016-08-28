@@ -1,0 +1,11 @@
+Similarities:
+1.Overloaded operators have the same precedence and associativity as the corresponding built-in operators.
+
+Differences:
+1.An overloaded operator function must either be a member of a class or have at least one parameter of class type.
+2.A few operators guarantee the order in which operands are evaluated.The overloaded versions of these operators do not
+preserve the order of evaluation and/or short-circuit evaluation,it is usually a bad idea to overload them.
+  In particular,the operand-evaluation guarantees of the logical 'AND',logical 'OR',comma operators are not preserved.
+Moreover,overloaded versions of '&&' or '||' operators do not preserve short-circuit evaluation properties of the built-in
+operators.Both operands are always evaluated.
+3.We can call an overloaded operator function directly in the same way that we call an ordinary function.
