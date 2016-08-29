@@ -4,6 +4,8 @@
 #include <iostream>
 using std::istream;
 using std::ostream;
+using std::cout;
+using std::endl;
 #include <string>
 using std::string;
 
@@ -28,9 +30,6 @@ private:
 	unsigned units_sold = 0;
 	double revenue = 0.0;
 };
-istream &operator>>(istream &, Sales_data &);
-ostream &operator<<(ostream &, const Sales_data &);
-Sales_data operator+(const Sales_data &, const Sales_data &);
 
 inline double Sales_data::avg_price() const {
 	return units_sold ? revenue/units_sold : 0;
@@ -49,6 +48,18 @@ istream &operator>>(istream &is, Sales_data &item) {
 	else
 		item = Sales_data();
 	return is;
+}
+
+Sales_data &Sales_data::operator+=(const Sales_data &rhs) {
+	units_sold += rhs.units_sold;
+	revenue += rhs.revenue;
+	return *this;
+}
+
+Sales_data operator+(const Sales_data &lhs, const Sales_data &rhs) {
+	Sales_data sum = lhs;
+	sum += rhs;
+	return sum;
 }
 
 #endif
