@@ -1,5 +1,5 @@
-#ifndef EX_14_5_8_H
-#define Ex_14_5_8_H
+#ifndef EX_14_DATE_H
+#define Ex_14_DATE_H
 
 #include <iostream>
 using std::istream;
@@ -19,6 +19,7 @@ public:
 	Date() = default;
 	Date(unsigned y, unsigned m, unsigned d) : Year(y), Month(m), Day(d) { }
 	Date(std::istream &is) { is >> *this; }
+	//I think the synthesized version of copy control members would work just fine.
 private:
 	unsigned Year = 2016;
 	unsigned Month = 1;

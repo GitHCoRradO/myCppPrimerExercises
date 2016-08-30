@@ -22,6 +22,7 @@ public:
 	Sales_data(istream &);
 	//member functions
 	Sales_data &operator+=(const Sales_data &); //compound assignment operator
+	Sales_data &operator=(const string &);
 	string isbn() const { return bookNo; }
 private:
 	double avg_price() const;
@@ -62,4 +63,8 @@ Sales_data operator+(const Sales_data &lhs, const Sales_data &rhs) {
 	return sum;
 }
 
+Sales_data &Sales_data::operator=(const string &s) {
+	bookNo = s;	//change only the ISBN
+	return *this;
+}
 #endif

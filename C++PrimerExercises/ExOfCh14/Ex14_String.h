@@ -24,6 +24,7 @@ public:
 							// null terminated.
 	String() : String("") { }
 	String(const char *);
+
 	//copy constructor
 	String(const String&);
 	//copy assignment operator
@@ -34,13 +35,17 @@ public:
 	String &operator=(String &&) noexcept;
 	//destructor
 	~String();
+
 	//other members
 	size_t size() const { return last - first; }		//total number of chars including the null char
 	/* number of chars excluding the null char.
 	considering this function,there should not be a String with String.size() == 0.
 	thus,size() >= 1.when size() == 1,the only char in this String should be null char corresponding to C-style string "".
 	*/
-	size_t length() const { return  last - first - 1; }		
+	size_t length() const { return  last - first - 1; }
+	//subscript operator
+	char &operator[](size_t n) { return first[n]; }
+	const char &operator[](size_t n) const { return first[n]; }
 	
 private:
 	pair<char *, char *> alloc_n_copy(const char *, const char *);

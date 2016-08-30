@@ -1,0 +1,16 @@
+Sales_data operator+(const Sales_data &lhs, const Sales_data &rhs) {
+	Sales_data sum = lhs;
+	sum.units_sold += rhs.units_sold;
+	sum.revenue += rhs.revenue;
+	return sum;
+}
+Sales_data &Sales_data::operator+=(const Sales_data &rhs) {
+	Sales_data sum;
+	sum = *this + rhs;
+	*this = sum;
+	return *this;
+}
+
+/*disadvantage:
+defined this way,both operator+ and operator+= creates a temperory object of Sales_data to store data.this overhead can be slightly improved by defining + using +=.
+*/

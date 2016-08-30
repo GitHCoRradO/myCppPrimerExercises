@@ -32,6 +32,9 @@ public:
         StrBlob(initializer_list<string> il);
         size_type size() const { return data->size(); }
         bool empty() const { return data->empty(); }
+	//subscript operator
+	string &operator[](size_type t) { check(t, "out of range"); return data->at(t); }
+	const string &operator[](size_type t) const { check(t, "out of range"); return data->at(t); }
         //add and remove elements
         void push_back(const string &t) { data->push_back(t); }
         void pop_back();
@@ -90,6 +93,9 @@ friend bool operator>=(const StrBlobPtr &, const StrBlobPtr &);
 public:
 	StrBlobPtr() : curr(0) { }
 	StrBlobPtr(StrBlob &a, size_t sz = 0) : wptr(a.data), curr(sz) { }
+	//subscript operator
+	string &operator[](size_t);
+	const string &operator[](size_t) const;
 	string &deref() const;
 	StrBlobPtr &incr();
 private:
@@ -171,4 +177,12 @@ bool operator>=(const StrBlobPtr &lhs, const StrBlobPtr &rhs) {
 	return lhs > rhs || lhs == rhs;
 }
 
+inline string &StrBlobPtr::operator[](size_t t) {
+	auto p = check(t, "out of range");
+	return p->at(t);
+}
+inline const string &StrBlobPtr::operator[](size_t t) const {
+	auto p = check(t, "out of range");
+	return p->at(t);
+}
 #endif
