@@ -1,0 +1,6 @@
+StrBlobPtr has two data members,one of class type weak_ptr<vector<string>>,the other of built-in type size_t.
+when an object of StrBlobPtr is destroyed,the corresponding destructor of weak_ptr<vector<string>> will be
+called to destruct the corresponding data member wptr.
+similar processes apply to copy and copy assignment operations.
+
+I think the synthesized version will handle the copy,copy-assignment and destruction processes well enough.
