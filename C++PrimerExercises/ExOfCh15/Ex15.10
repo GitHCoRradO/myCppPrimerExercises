@@ -1,0 +1,7 @@
+inside read function,the actual work of reading data is done by the input operator >>.
+the first parameter of read is a reference to std::istream.
+because std::ifstream derives from std::istream,it is ok to bind a std::ifstream object to
+a reference to std::istream.
+inside std::istream and std::ifstream,input operator >> is a virtual function.
+when the body of read is run,the version of >> is dependent on its left hand operand's
+dynamic type.

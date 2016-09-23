@@ -1,0 +1,5 @@
+it calls
+void calc(int);
+
+conversion from double to int has higher rank than conversion from double to (class type)
+LongDouble.

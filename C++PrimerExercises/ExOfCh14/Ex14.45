@@ -1,0 +1,8 @@
+//example code
+class Sales_data {
+//other members as before
+/*...*/
+public:
+	explicit operator std::string() const { return bookNo; }
+	explicit operator double() const { return avg_price(); }
+};

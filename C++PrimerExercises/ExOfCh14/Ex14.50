@@ -1,0 +1,16 @@
+struct LongDouble {
+	LongDouble(double = 0.0);
+	operator double();
+	operator float();
+};
+LongDouble ldObj;
+int ex1 = ldObj;
+float ex2 = ldObj;
+
+/*
+when two user-defined conversions are used,the rank of the standard converion,if any,
+preceeding or following the conversion function is used to select the best match.
+ldObj convert to float,then ex2 will be initialized correcty.
+whereas double to int and float to int have the same rank,the initialization of ex1 is
+ambiguous.
+*/

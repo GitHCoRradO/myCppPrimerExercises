@@ -1,0 +1,6 @@
+it is not good to define these conversion operators,for that an object of
+Sales_data contains its bookNo and units_sold and revenue data members as a
+whole unit.and if necessary,we can define functions to print the isbn and
+avg_price information.
+surely,these conersion functions should be defined as explicit to prevent
+inadvertent implicit conversion.

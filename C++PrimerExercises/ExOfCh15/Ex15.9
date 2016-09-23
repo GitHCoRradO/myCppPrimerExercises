@@ -1,0 +1,8 @@
+examples:
+Quote qt, *p = &qt, &r = qt;
+Bulk_Quote bq;
+limited_disc_Quote ldq;
+p = &bq;	//#1
+r = bq;		//#2
+p = &ldq;	//#3
+qt = bq;	//does qt in this case have differing static and dynamic types?

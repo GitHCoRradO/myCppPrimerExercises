@@ -1,0 +1,3 @@
+surely we can declare a function as both override and final.
+override means it overrides the version from its base class.
+final means it wants no derived classes from itself to override the function anymore.

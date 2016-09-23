@@ -1,0 +1,5 @@
+double d = s1.operator int() + 3.14;
+or
+double d = s1 + SmallInt(3.14);
+
+ambiguous.

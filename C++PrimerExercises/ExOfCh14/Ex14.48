@@ -1,0 +1,3 @@
+there is no need to define such a conversion operator.
+what kind of Date information would be viewed as true or false?
+there is little meaning for such conversion.

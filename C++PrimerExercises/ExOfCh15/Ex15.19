@@ -1,0 +1,6 @@
+Member functions and friends of D can use the conversion to B regardless of how D inherits from B. The derived-to-base conversion to a direct base class is always accessible to members and friends of a derived class.
+for Pub_Derv,Prot_Derv and Priv_Derv,the function is legal.
+
+Member functions and friends of classes derived from D may use the derived-to-base conversion if D inherits from B using either public or protected. Such code may not use the conversion if D inherits privately from B.
+for Derived_from_Public and Derived_from_Protected,the function is legal.for Derived_from_Private,the
+function is illegal.

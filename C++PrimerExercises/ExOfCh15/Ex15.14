@@ -1,0 +1,6 @@
+(a)base::print()
+(b)derived::print()
+(c)name() is not virtual.base::name()
+(d)derived::name()
+(e)base::print()
+(f)derived::print()

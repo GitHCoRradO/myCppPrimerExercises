@@ -1,0 +1,1 @@
+void derived::print(ostream &os) override { base::print(os); os << " " << i; }
