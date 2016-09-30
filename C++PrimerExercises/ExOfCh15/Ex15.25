@@ -1,0 +1,14 @@
+Disc_quote has a constructor that takes 4 parameters.if we do not define a default
+constructor,the compiler will not synthesize one,thus making the default constructor
+deleted.any classes derived from Disc_quote will have deleted a default constructor.
+//what if I explicitly declare a default constructor in Bulk_quote?is this another form
+//of overriding?
+//answer:
+//if the default constructor(or copy constructor,copy-assignment operator or destructor)
+//in the base class is deleted or inaccessible,then the corresponding member in the
+//derived class is defined as deleted,because the compiler cannot use the base-class
+//member to construct,assign,or destroy the base-class part of the object. 
+//
+//in the light of this,if the base class has a deleted default constructor,and the
+//derived class explicitly declare a non-deleted default constructor,the code would
+//not compile.

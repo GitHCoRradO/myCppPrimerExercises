@@ -1,0 +1,20 @@
+Query q = Query("fiery") & Query("bird") | Query("wind");
+
+(a)
+constructor Query(const std::string&) for Query("fiery"),ect.
+constructor WordQuery(const std::string&) in Query::Query(const std::string &s) : q(new WordQuery(s) { }
+constructor BinaryQuery(const Query &l, const Query &r, std::string s)
+constructor AndQuery(const Query &l, const Query &r)
+constructor OrQuery(const Query &l, const Query &r)
+
+(b)
+Query::rep()
+OrQuery::rep()
+WordQuery::rep()
+AndQuery::rep()
+
+(c)
+Query::eval(const TextQuery &)
+OrQuery::eval(const TextQuery &)
+WordQuery::eval(const TextQuery &)
+AndQuery::eval(const TextQuery &)

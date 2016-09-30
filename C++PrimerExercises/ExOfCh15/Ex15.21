@@ -1,0 +1,8 @@
+grandfather,grandmother,father,mother,child.
+class grandfatherf { };
+class grandmotherf { };
+class father : public grandfatherf, public grandmotherf { };
+class grandfatherm { };
+class grandmotherm { };
+class mother : public grandfatherm, public grandmotherm { };
+class child : public father, public mother { };

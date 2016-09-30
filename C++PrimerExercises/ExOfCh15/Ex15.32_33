@@ -1,0 +1,10 @@
+Query class does not define any of its copy control members and Query has only 1 data member,which is of std::shared_ptr type.std::shared_ptr object can be properly copied,
+copy-assigned,moved,move-assigned and destroyed.then all 5 of Query's copy control members
+will be synthesized to memberwise copy,copy-assign,move,move-assign,destroy its data member
+respectively.
+Query_base explicitly declares a default virtual destructor,thus its move,move-assignment
+copy control members will not be synthesized.the copy and copy-assignment copy control
+members will still be synthesized to memberwise copy,copy-assign its data members.
+However,Query_base is an abstract class,we may not directly create objects of Query_base.
+Besides,Query_base has no data member at all.conceptually,even if an object of Query_base
+is copied or assigned or destroyed,nothing actually happens relating to underlying data.

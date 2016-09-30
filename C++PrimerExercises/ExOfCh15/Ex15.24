@@ -1,0 +1,3 @@
+base classes in inheritance hierarchies need virtual destructors.
+a virtual destructor should deallocate,if any,resources allocated by the corresponding class
+in which that destructor is defined.

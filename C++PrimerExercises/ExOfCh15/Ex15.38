@@ -1,0 +1,2 @@
+illegal.
+the return type of these overloaded operators is Query instead of BinaryQuery or AndQuery or OrQuery.

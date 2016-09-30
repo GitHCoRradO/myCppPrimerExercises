@@ -1,0 +1,4 @@
+It does not matter whether call to eval on either of the lhs and rhs member returns an object of QueryResult with an empty set<line_no>.
+the code will create a shared_ptr<set<line_no>> according to the set<line_no> above.
+then code will merge the other set<line_no> from lhs.eval(text) or rhs.eval(text) with the existing one,thus creating a union of the line_no returned from lhs.eval(text) and
+rhs.eval(text).
