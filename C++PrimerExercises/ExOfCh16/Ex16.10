@@ -1,0 +1,2 @@
+When the compiler instantiates a class from a class template,it rewrites the template,
+replacing each instance of the template parameters by the given tempalte arguments.
