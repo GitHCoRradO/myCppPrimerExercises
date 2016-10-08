@@ -25,6 +25,8 @@ public:
 	//constructors
 	Blob() : data(make_shared<vector<T>>()) { }
 	Blob(initializer_list<T> il) : data(make_shared<vector<T>>(il)) { }
+	template <typename It> Blob(It b, It e) : 
+	data(make_shared<vector<T>>(b, e)) { }
 
 	//member functions
 	size_type size() const { return data->size(); }
@@ -44,6 +46,5 @@ private:
 	shared_ptr<vector<T>> data;
 	void check(size_type, const string &) const;
 };
-
 
 #endif

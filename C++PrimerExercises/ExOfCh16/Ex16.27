@@ -1,0 +1,10 @@
+(a) function declaration.the parameter type is an instantiation of template class Stack<char>.
+    code for Stack<char> will not be generated until this function is called.
+(b) (c)
+class Exercise has two data members of template class.
+code for Stack<double> and Stack<int> will not be generated until class Exercise is used.
+(d) declaration of sc uses template class type Stack<char>.
+code for Stack<char> is generated here.
+(e) call to f1 takes an argument of type Stack<char>.and code for Stack<char> has been generated in (d),thus the same code will not be generated again.
+(f) not very sure if Stack<string> is instantiated here.
+I feel code is generated for Stack<string> here.

@@ -1,0 +1,7 @@
+extern template class vector<string>;
+//instantiation declaration of vector<string>.there must be an explicit instantiation definition of
+vector<string> somewhere else in the program.
+
+template class vector<Sales_data>;
+//explicit instantiation definition of vector<Sales_data>,instantiating all members of this class
+template.
