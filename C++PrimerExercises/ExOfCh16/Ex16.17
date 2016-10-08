@@ -1,0 +1,4 @@
+the typename and class keywords have the same meaning and can be used interchangeably inside a
+template parameter list.A template parameter list can use both keywords.
+When we want to inform the compiler that a name represents a type,we must use the keyword typename,
+not class.

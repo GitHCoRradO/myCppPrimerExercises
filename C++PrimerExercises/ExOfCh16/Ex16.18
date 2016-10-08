@@ -1,0 +1,22 @@
+(a)illegal.
+corrected as:
+template <typename T, typename U, typename V> void f1(T, U, V);
+
+(b)illegal.
+corrected as:
+template <typename T> T f2(T &);
+
+(c)legal.
+
+(d)illegal.
+corrected as:
+template <typename T> void f4(T, T);
+
+(e)legal.
+typedef char Ctype;
+template <typename Ctype> Ctype f5(Ctype);
+/*template parameters follow normal scoping rules.the name of a template paramter can be used after
+it has been declared and until the end of the template declaration or definition.
+As with any other name,a template parameter hides any declaration of that name in an outer scope.
+thus,Ctype in declaration of f5 hides the typedef char Ctype.
+*/
