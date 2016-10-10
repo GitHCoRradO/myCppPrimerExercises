@@ -1,0 +1,9 @@
+template <class T> int compare(const T&, const T&);
+
+(a) compare("hi", "world");
+"hi" has type const char[3],while "world" has type const char[6].these types do not match.
+thus the call is in error.
+
+(b) compare("bye", "dad");
+both have type const char[4].so this statement will compile.
+T is char*.

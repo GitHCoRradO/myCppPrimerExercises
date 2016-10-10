@@ -1,0 +1,7 @@
+If we do not explicitly specify the template argument type,we must pass exactly the same type to the two parameters of max.
+and the return type and parameters are all references to const.
+
+template <typename T> const T &max(const T&, const T&);
+if we specify the template argument type,then normal conversions apply for its arguments.
+for instance,
+max<double>(10, 3.1415);

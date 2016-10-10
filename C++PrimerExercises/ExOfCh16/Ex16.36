@@ -1,0 +1,6 @@
+(a)T is int *.
+(b)T1 is int*,T2 is int*.
+(c)T is const int*.
+(d)T1 and T2 are both const int*.
+(e)f1(int*, const int*).the deduced types of the parameters differ.this call is in error.
+(f)T1 is int*.T2 is const int*.
